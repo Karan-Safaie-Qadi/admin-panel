@@ -2,6 +2,12 @@
 
 **A modern, feature-rich SPA admin panel for digital products stores.** Built with vanilla JavaScript, featuring real-time charts, CRUD operations, order flow visualization, and a sleek dark blue theme with golden accents.
 
+[![GitHub Pages](https://img.shields.io/badge/demo-online-brightgreen?style=flat&logo=github)](https://karan-safaie-qadi.github.io/admin-panel/)
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![GitHub last commit](https://img.shields.io/github/last-commit/Karan-Safaie-Qadi/admin-panel)](https://github.com/Karan-Safaie-Qadi/admin-panel/commits/main)
+[![GitHub stars](https://img.shields.io/github/stars/Karan-Safaie-Qadi/admin-panel?style=social)](https://github.com/Karan-Safaie-Qadi/admin-panel)
+
 ---
 
 ## ✨ Features
