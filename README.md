@@ -209,3 +209,45 @@ docker-compose up
 | **سفارشات** | پیگیری و فیلتر سفارشات مشتریان |
 | **کاربران** | مدیریت حساب‌های کاربری |
 | **گزارشات** | تحلیل فروش و آمار درآمد |
+
+---
+
+## 📁 ساختار پروژه
+
+```
+admin-panel/
+├── index.html         # نقطه ورود SPA (تمپلیت همه صفحات)
+├── css/
+│   └── style.css      # استایل کامل (تم تیره، انیمیشن، RTL)
+├── js/
+│   └── app.js         # منطق برنامه (روتر، CRUD، نمودارها)
+├── data/
+│   └── data.json      # دیتای تستی (محصولات، دسته‌ها، سفارشات، کاربران)
+├── docs/              # فایل‌های مستندات
+├── .github/           # تمپلیت‌ها و workflows گیت‌هاب
+├── screenshots/       # تصاویر پیش‌نمایش
+├── tests/             # فایل‌های تست
+├── examples/          # مثال‌های استفاده
+├── Dockerfile         # استقرار با کانتینر
+├── docker-compose.yml # ارکستراسیون داکر
+├── package.json       # اسکریپت‌های توسعه
+└── README.md          # این فایل
+```
+
+---
+
+## 🤝 مشارکت
+
+مشارکت شما خوش‌آمد است! لطفاً راهنمای [CONTRIBUTING.md](CONTRIBUTING.md) را مطالعه کنید.
+
+1. مخزن را Fork کنید
+2. یک branch جدید بسازید (`git checkout -b feature/amazing-feature`)
+3. تغییرات خود را commit کنید (`git commit -m 'Add amazing feature'`)
+4. به branch خود push کنید (`git push origin feature/amazing-feature`)
+5. یک Pull Request باز کنید
+
+---
+
+## 📄 مجوز
+
+این پروژه تحت مجوز MIT منتشر شده است — برای جزئیات بیشتر فایل [LICENSE](LICENSE) را مشاهده کنید.
