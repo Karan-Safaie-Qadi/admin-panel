@@ -80,3 +80,51 @@ Navigate through the sidebar to access different sections:
 | **Orders** | Track and filter customer orders |
 | **Users** | Manage user accounts and permissions |
 | **Reports** | Sales analytics and revenue insights |
+
+---
+
+## 📁 Project Structure
+
+```
+admin-panel/
+├── index.html         # SPA entry point (all page templates)
+├── css/
+│   └── style.css      # Full stylesheet (dark theme, animations, RTL)
+├── js/
+│   └── app.js         # Application logic (router, CRUD, charts)
+├── data/
+│   └── data.json      # Test data (products, categories, orders, users)
+├── docs/              # Documentation files
+├── .github/           # GitHub templates and workflows
+├── screenshots/       # Preview images
+├── tests/             # Test files
+├── examples/          # Usage examples
+├── Dockerfile         # Container deployment
+├── docker-compose.yml # Docker orchestration
+├── package.json       # Dev scripts
+└── README.md          # This file
+```
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please read the [CONTRIBUTING.md](CONTRIBUTING.md) guide.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+
+---
+
+---
+
+# ⚡ پنل مدیریت فروشگاه دیجیتال
