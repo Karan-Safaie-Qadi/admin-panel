@@ -1,0 +1,49 @@
+{
+  "products": [
+    { "id": 1, "name": "قالب حرفه‌ای وردپرس", "category": "قالب", "price": 890000, "sales": 342, "rating": 4.8, "stock": 999, "status": "active", "createdAt": "2025-01-15", "description": "قالب ریسپانسیو و سریع برای وردپرس با صفحه‌ساز اختصاصی", "image": "📦" },
+    { "id": 2, "name": "پکیج آموزش لاراول", "category": "آموزشی", "price": 450000, "sales": 567, "rating": 4.9, "stock": 999, "status": "active", "createdAt": "2025-01-20", "description": "آموزش کامل لاراول از مقدماتی تا پیشرفته", "image": "🎓" },
+    { "id": 3, "name": "اسکریپت فروشگاهی", "category": "اسکریپت", "price": 1200000, "sales": 189, "rating": 4.7, "stock": 999, "status": "active", "createdAt": "2025-02-01", "description": "اسکریپت فروشگاهی حرفه‌ای با React و Laravel", "image": "🛒" },
+    { "id": 4, "name": "پلاگین امنیتی", "category": "پلاگین", "price": 350000, "sales": 723, "rating": 4.6, "stock": 999, "status": "active", "createdAt": "2025-02-10", "description": "پلاگین امنیتی پیشرفته با فایروال و ضد هک", "image": "🔒" },
+    { "id": 5, "name": "قالب مدیریتی", "category": "قالب", "price": 650000, "sales": 215, "rating": 4.5, "stock": 999, "status": "active", "createdAt": "2025-02-15", "description": "قالب مدیریتی مدرن با تم تیره و روشن", "image": "📊" },
+    { "id": 6, "name": "آموزش React Native", "category": "آموزشی", "price": 550000, "sales": 431, "rating": 4.8, "stock": 999, "status": "active", "createdAt": "2025-03-01", "description": "آموزش ساخت اپلیکیشن موبایل با React Native", "image": "📱" },
+    { "id": 7, "name": "اسکریپت رزرو آنلاین", "category": "اسکریپت", "price": 980000, "sales": 156, "rating": 4.4, "stock": 999, "status": "active", "createdAt": "2025-03-10", "description": "سیستم رزرو آنلاین برای هتل و رستوران", "image": "📅" },
+    { "id": 8, "name": "پلاگین سئو", "category": "پلاگین", "price": 280000, "sales": 892, "rating": 4.7, "stock": 999, "status": "active", "createdAt": "2025-03-15", "description": "پلاگین بهینه‌سازی سئو برای وردپرس", "image": "🚀" },
+    { "id": 9, "name": "آموزش Python", "category": "آموزشی", "price": 380000, "sales": 645, "rating": 4.9, "stock": 999, "status": "active", "createdAt": "2025-04-01", "description": "آموزش جامع Python از صفر تا پروژه", "image": "🐍" },
+    { "id": 10, "name": "قالب خبری", "category": "قالب", "price": 750000, "sales": 178, "rating": 4.3, "stock": 999, "status": "inactive", "createdAt": "2025-04-10", "description": "قالب خبری حرفه‌ای با سرعت بارگذاری بالا", "image": "📰" },
+    { "id": 11, "name": "اسکریپت چت آنلاین", "category": "اسکریپت", "price": 520000, "sales": 234, "rating": 4.5, "stock": 999, "status": "active", "createdAt": "2025-04-15", "description": "سیستم چت آنلاین با WebSocket", "image": "💬" },
+    { "id": 12, "name": "پلاگین عضویت", "category": "پلاگین", "price": 190000, "sales": 1102, "rating": 4.4, "stock": 999, "status": "active", "createdAt": "2025-05-01", "description": "سیستم عضویت و اشتراک پیشرفته", "image": "👥" },
+    { "id": 13, "name": "آموزش Vue.js", "category": "آموزشی", "price": 420000, "sales": 389, "rating": 4.6, "stock": 999, "status": "active", "createdAt": "2025-05-10", "description": "آموزش فریمورک Vue.js با پروژه عملی", "image": "💚" },
+    { "id": 14, "name": "اسکریپت مدیریت پروژه", "category": "اسکریپت", "price": 1500000, "sales": 98, "rating": 4.8, "stock": 999, "status": "active", "createdAt": "2025-05-15", "description": "اسکریپت مدیریت پروژه و تیم با قابلیت‌های پیشرفته", "image": "📋" },
+    { "id": 15, "name": "قالب فروم", "category": "قالب", "price": 580000, "sales": 143, "rating": 4.2, "stock": 999, "status": "inactive", "createdAt": "2025-06-01", "description": "قالب انجمن گفتگو با طراحی مدرن", "image": "💬" }
+  ],
+  "categories": [
+    { "id": 1, "name": "قالب", "icon": "🎨", "color": "#4f46e5", "count": 4 },
+    { "id": 2, "name": "اسکریپت", "icon": "⚡", "color": "#f59e0b", "count": 4 },
+    { "id": 3, "name": "پلاگین", "icon": "🔧", "color": "#10b981", "count": 3 },
+    { "id": 4, "name": "آموزشی", "icon": "📚", "color": "#ef4444", "count": 4 }
+  ],
+  "orders": [
+    { "id": 1001, "customer": "علی محمدی", "email": "ali@example.com", "items": ["قالب حرفه‌ای وردپرس"], "total": 890000, "status": "delivered", "date": "2025-06-01", "payment": "card" },
+    { "id": 1002, "customer": "سارا احمدی", "email": "sara@example.com", "items": ["پکیج آموزش لاراول", "آموزش React Native"], "total": 1000000, "status": "processing", "date": "2025-06-03", "payment": "card" },
+    { "id": 1003, "customer": "رضا کریمی", "email": "reza@example.com", "items": ["اسکریپت فروشگاهی"], "total": 1200000, "status": "pending", "date": "2025-06-05", "payment": "wallet" },
+    { "id": 1004, "customer": "مریم حسینی", "email": "maryam@example.com", "items": ["پلاگین امنیتی", "پلاگین سئو"], "total": 630000, "status": "delivered", "date": "2025-06-07", "payment": "card" },
+    { "id": 1005, "customer": "امیر رضایی", "email": "amir@example.com", "items": ["آموزش Python"], "total": 380000, "status": "cancelled", "date": "2025-06-08", "payment": "card" },
+    { "id": 1006, "customer": "نرگس سعیدی", "email": "narges@example.com", "items": ["اسکریپت رزرو آنلاین"], "total": 980000, "status": "processing", "date": "2025-06-10", "payment": "wallet" },
+    { "id": 1007, "customer": "کیان جعفری", "email": "kian@example.com", "items": ["پلاگین عضویت", "پلاگین سئو"], "total": 470000, "status": "pending", "date": "2025-06-12", "payment": "card" },
+    { "id": 1008, "customer": "لیلا محمدپور", "email": "leila@example.com", "items": ["قالب مدیریتی"], "total": 650000, "status": "delivered", "date": "2025-06-14", "payment": "wallet" },
+    { "id": 1009, "customer": "حسین اکبری", "email": "hosein@example.com", "items": ["آموزش Vue.js", "آموزش Python"], "total": 800000, "status": "shipped", "date": "2025-06-16", "payment": "card" },
+    { "id": 1010, "customer": "زهرا صادقی", "email": "zahra@example.com", "items": ["اسکریپت چت آنلاین"], "total": 520000, "status": "delivered", "date": "2025-06-18", "payment": "card" },
+    { "id": 1011, "customer": "محمد طاهری", "email": "mohammad@example.com", "items": ["اسکریپت مدیریت پروژه"], "total": 1500000, "status": "pending", "date": "2025-06-20", "payment": "wallet" },
+    { "id": 1012, "customer": "نوید کاشانی", "email": "navid@example.com", "items": ["قالب خبری"], "total": 750000, "status": "processing", "date": "2025-06-22", "payment": "card" }
+  ],
+  "users": [
+    { "id": 1, "name": "مدیر سیستم", "email": "admin@store.com", "role": "admin", "status": "active", "joined": "2024-01-01", "avatar": "👨‍💼" },
+    { "id": 2, "name": "علی محمدی", "email": "ali@example.com", "role": "user", "status": "active", "joined": "2025-01-15", "avatar": "👤" },
+    { "id": 3, "name": "سارا احمدی", "email": "sara@example.com", "role": "user", "status": "active", "joined": "2025-02-20", "avatar": "👩" },
+    { "id": 4, "name": "رضا کریمی", "email": "reza@example.com", "role": "editor", "status": "active", "joined": "2025-03-10", "avatar": "👨‍💻" },
+    { "id": 5, "name": "مریم حسینی", "email": "maryam@example.com", "role": "user", "status": "suspended", "joined": "2025-04-05", "avatar": "👩‍💼" },
+    { "id": 6, "name": "امیر رضایی", "email": "amir@example.com", "role": "user", "status": "active", "joined": "2025-04-20", "avatar": "🧑‍💻" },
+    { "id": 7, "name": "نرگس سعیدی", "email": "narges@example.com", "role": "editor", "status": "active", "joined": "2025-05-01", "avatar": "👩‍🎓" },
+    { "id": 8, "name": "کیان جعفری", "email": "kian@example.com", "role": "user", "status": "active", "joined": "2025-05-15", "avatar": "🧑‍🔧" }
+  ]
+}

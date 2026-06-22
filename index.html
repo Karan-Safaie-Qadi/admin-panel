@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>پنل مدیریت | فروشگاه دیجیتال</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app-layout">
+
+    <!-- ─── SIDEBAR ─── -->
+    <aside class="sidebar">
+      <div class="sidebar-logo">
+        <div class="logo-icon">⚡</div>
+        <div>
+          <div class="logo-text">دیجی‌استور</div>
+          <div class="logo-sub">پنل مدیریت</div>
+        </div>
+      </div>
+      <nav class="sidebar-nav">
+        <div class="nav-section">منو اصلی</div>
+        <a class="nav-item active" data-route="dashboard" href="#dashboard">
+          <span class="nav-icon">📊</span> داشبورد
+        </a>
+        <a class="nav-item" data-route="products" href="#products">
+          <span class="nav-icon">📦</span> محصولات
+          <span class="nav-badge" id="nav-product-count">0</span>
+        </a>
+        <a class="nav-item" data-route="categories" href="#categories">
+          <span class="nav-icon">📁</span> دسته‌بندی‌ها
+        </a>
+        <a class="nav-item" data-route="orders" href="#orders">
+          <span class="nav-icon">🛒</span> سفارشات
+          <span class="nav-badge" id="nav-order-count">0</span>
+        </a>
+        <a class="nav-item" data-route="users" href="#users">
+          <span class="nav-icon">👥</span> کاربران
+        </a>
+        <div class="nav-section">گزارشات</div>
+        <a class="nav-item" data-route="reports" href="#reports">
+          <span class="nav-icon">📈</span> گزارشات
+        </a>
+      </nav>
+      <div class="sidebar-footer">
+        <div class="avatar">👨‍💼</div>
+        <div class="user-info">
+          <div class="user-name">مدیر سیستم</div>
+          <div class="user-role">مدیر ارشد</div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ─── MAIN ─── -->
+    <main class="main-content">
+
+      <!-- HEADER -->
+      <header class="header">
+        <div class="header-left">
+          <button class="header-btn hamburger">☰</button>
+          <h1 class="page-title">داشبورد <span>| پنل مدیریت</span></h1>
+        </div>
+        <div class="header-right">
+          <button class="header-btn">🔍</button>
+          <button class="header-btn">
+            🔔
+            <span class="notification-dot"></span>
+          </button>
+          <button class="header-btn">⚙️</button>
+        </div>
+      </header>
+
+      <!-- ─── DASHBOARD ─── -->
+      <section class="page-content" id="page-dashboard">
+        <div class="stats-grid">
+          <div class="stat-card animate-slide-up stagger-1" id="stat-products" onclick="App.navigate('products')" style="cursor:pointer">
+            <div class="stat-header">
+              <span class="stat-title">محصولات</span>
+              <span class="stat-icon">📦</span>
+            </div>
+            <div class="stat-value">0</div>
+            <div class="stat-change up">↑ ۱۲٪ نسبت به ماه قبل</div>
+          </div>
+          <div class="stat-card animate-slide-up stagger-2" id="stat-orders" onclick="App.navigate('orders')" style="cursor:pointer">
+            <div class="stat-header">
+              <span class="stat-title">سفارشات</span>
+              <span class="stat-icon">🛒</span>
+            </div>
+            <div class="stat-value">0</div>
+            <div class="stat-change up">↑ ۲۳٪ نسبت به ماه قبل</div>
+          </div>
+          <div class="stat-card animate-slide-up stagger-3" id="stat-revenue" onclick="App.navigate('reports')" style="cursor:pointer">
+            <div class="stat-header">
+              <span class="stat-title">درآمد کل</span>
+              <span class="stat-icon">💰</span>
+            </div>
+            <div class="stat-value">0</div>
+            <div class="stat-change up">↑ ۱۸٪ نسبت به ماه قبل</div>
+          </div>
+          <div class="stat-card animate-slide-up stagger-4" id="stat-users" onclick="App.navigate('users')" style="cursor:pointer">
+            <div class="stat-header">
+              <span class="stat-title">کاربران</span>
+              <span class="stat-icon">👥</span>
+            </div>
+            <div class="stat-value">0</div>
+            <div class="stat-change down">↓ ۲٪ نسبت به ماه قبل</div>
+          </div>
+        </div>
+
+        <div class="charts-grid">
+          <div class="chart-card">
+            <div class="card-header">
+              <div>
+                <div class="card-title">📈 فروش ماهانه</div>
+                <div class="card-subtitle">آخرین ۱۲ ماه</div>
+              </div>
+              <button class="btn btn-sm btn-secondary">📥 خروجی</button>
+            </div>
+            <div class="chart-container"><canvas id="salesChart"></canvas></div>
+          </div>
+          <div class="chart-card">
+            <div class="card-header">
+              <div>
+                <div class="card-title">📊 دسته‌بندی محصولات</div>
+                <div class="card-subtitle">توزیع در دسته‌ها</div>
+              </div>
+            </div>
+            <div class="chart-container"><canvas id="categoryChart"></canvas></div>
+          </div>
+        </div>
+
+        <div class="charts-grid" style="grid-template-columns:1fr 1fr">
+          <div class="chart-card">
+            <div class="card-header">
+              <div>
+                <div class="card-title">🏆 پرفروش‌ترین محصولات</div>
+                <div class="card-subtitle">بر اساس تعداد فروش</div>
+              </div>
+            </div>
+            <div class="chart-container"><canvas id="productChart"></canvas></div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <div>
+                <div class="card-title">🔄 وضعیت سفارشات</div>
+                <div class="card-subtitle">مراحل پردازش</div>
+              </div>
+            </div>
+            <div class="flowchart">
+              <div class="flow-step active">
+                <div class="step-circle">📝</div>
+                <span class="step-label">در انتظار</span>
+              </div>
+              <div class="flow-arrow">◀</div>
+              <div class="flow-step">
+                <div class="step-circle">⚙️</div>
+                <span class="step-label">پردازش</span>
+              </div>
+              <div class="flow-arrow">◀</div>
+              <div class="flow-step">
+                <div class="step-circle">🚚</div>
+                <span class="step-label">ارسال</span>
+              </div>
+              <div class="flow-arrow">◀</div>
+              <div class="flow-step">
+                <div class="step-circle">✅</div>
+                <span class="step-label">تحویل</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:20px">
+          <div class="card-header">
+            <div>
+              <div class="card-title">🕐 آخرین سفارشات</div>
+              <div class="card-subtitle">۵ سفارش اخیر</div>
+            </div>
+            <button class="btn btn-sm btn-secondary" onclick="App.navigate('orders')">مشاهده همه</button>
+          </div>
+          <div class="table-container">
+            <table id="recent-orders-table">
+              <thead>
+                <tr><th>شماره</th><th>مشتری</th><th>محصولات</th><th>مبلغ</th><th>وضعیت</th><th>تاریخ</th></tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─── PRODUCTS ─── -->
+      <section class="page-content page-hidden" id="page-products">
+        <div class="toolbar">
+          <div class="toolbar-right">
+            <div class="search-box">
+              <span class="search-icon">🔍</span>
+              <input type="text" placeholder="جستجوی محصول..." oninput="App.filterProducts(this.value)">
+            </div>
+          </div>
+          <div class="toolbar-left">
+            <button class="btn btn-primary" onclick="App.showAddProductModal()">➕ افزودن محصول</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="table-container">
+            <table id="products-table">
+              <thead>
+                <tr><th></th><th>محصول</th><th>دسته</th><th>قیمت</th><th>فروش</th><th>امتیاز</th><th>وضعیت</th><th>عملیات</th></tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+          <div class="pagination" id="products-pagination"></div>
+        </div>
+      </section>
+
+      <!-- ─── CATEGORIES ─── -->
+      <section class="page-content page-hidden" id="page-categories">
+        <div class="toolbar">
+          <div></div>
+          <div class="toolbar-left">
+            <button class="btn btn-primary" onclick="App.showAddCategoryModal()">➕ دسته‌بندی جدید</button>
+          </div>
+        </div>
+        <div class="category-grid" id="categories-grid"></div>
+      </section>
+
+      <!-- ─── ORDERS ─── -->
+      <section class="page-content page-hidden" id="page-orders">
+        <div class="toolbar">
+          <div></div>
+          <div class="toolbar-left">
+            <button class="btn filter-btn btn-primary btn-sm" data-status="all" onclick="App.filterOrders('all')">📋 همه</button>
+            <button class="btn filter-btn btn-secondary btn-sm" data-status="pending" onclick="App.filterOrders('pending')">⏳ در انتظار</button>
+            <button class="btn filter-btn btn-secondary btn-sm" data-status="processing" onclick="App.filterOrders('processing')">⚙️ پردازش</button>
+            <button class="btn filter-btn btn-secondary btn-sm" data-status="shipped" onclick="App.filterOrders('shipped')">🚚 ارسال</button>
+            <button class="btn filter-btn btn-secondary btn-sm" data-status="delivered" onclick="App.filterOrders('delivered')">✅ تحویل</button>
+            <button class="btn filter-btn btn-secondary btn-sm" data-status="cancelled" onclick="App.filterOrders('cancelled')">❌ لغو</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="table-container">
+            <table id="orders-table">
+              <thead>
+                <tr><th>#</th><th>مشتری</th><th>محصولات</th><th>مبلغ</th><th>وضعیت</th><th>تاریخ</th><th>عملیات</th></tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─── USERS ─── -->
+      <section class="page-content page-hidden" id="page-users">
+        <div class="card">
+          <div class="table-container">
+            <table id="users-table">
+              <thead>
+                <tr><th>کاربر</th><th>نقش</th><th>وضعیت</th><th>تاریخ عضویت</th><th>فعال/غیرفعال</th><th>عملیات</th></tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─── REPORTS ─── -->
+      <section class="page-content page-hidden" id="page-reports">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-header">
+              <span class="stat-title">مجموع درآمد</span>
+              <span class="stat-icon">💰</span>
+            </div>
+            <div class="stat-value report-stat" data-key="total-revenue">0</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-header">
+              <span class="stat-title">تعداد سفارشات</span>
+              <span class="stat-icon">📋</span>
+            </div>
+            <div class="stat-value report-stat" data-key="total-orders">0</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-header">
+              <span class="stat-title">میانگین هر سفارش</span>
+              <span class="stat-icon">📊</span>
+            </div>
+            <div class="stat-value report-stat" data-key="avg-order">0</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-header">
+              <span class="stat-title">محصول پرفروش</span>
+              <span class="stat-icon">🏆</span>
+            </div>
+            <div class="stat-value report-stat" data-key="top-product" style="font-size:20px">—</div>
+          </div>
+        </div>
+        <div class="charts-grid">
+          <div class="chart-card">
+            <div class="card-header">
+              <div>
+                <div class="card-title">📊 فروش ماهانه (نمودار میله‌ای)</div>
+                <div class="card-subtitle">جزئیات فروش در ۱۲ ماه</div>
+              </div>
+            </div>
+            <div class="chart-container"><canvas id="reportSalesChart"></canvas></div>
+          </div>
+          <div class="chart-card">
+            <div class="card-header">
+              <div>
+                <div class="card-title">🎯 درآمد به تفکیک دسته</div>
+                <div class="card-subtitle">نمودار قطبی</div>
+              </div>
+            </div>
+            <div class="chart-container"><canvas id="reportCategoryChart"></canvas></div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <div class="toast-container" id="toast-container"></div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
