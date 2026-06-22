@@ -15,3 +15,24 @@
 - **🎨 Modern UI** — Dark blue theme, golden accent, glassmorphism, smooth animations
 - **🌐 RTL Support** — Full Persian/Farsi language support with Vazirmatn font
 - **📱 Responsive** — Mobile-friendly sidebar, adaptive grid layouts
+
+---
+
+## 🛠 Tech Stack
+
+| Category | Technology |
+|----------|-----------|
+| **Core** | Vanilla JavaScript, HTML5, CSS3 |
+| **Charts** | Chart.js 4.x |
+| **Icons** | Emoji / Unicode |
+| **Font** | Vazirmatn (Persian), Segoe UI |
+| **Styling** | CSS Custom Properties, Flexbox, Grid |
+| **Architecture** | SPA (Hash-based Router) |
+| **Data** | Local JSON file |
+
+---
+
+## 📸 Screenshots
+
+> Screenshots coming soon!  
+> *Check the `/screenshots` directory for future previews.*
