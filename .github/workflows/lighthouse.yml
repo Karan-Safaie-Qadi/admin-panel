@@ -1,0 +1,16 @@
+name: Lighthouse CI
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run Lighthouse
+        uses: treosh/lighthouse-ci-action@v11
+        with:
+          urls: |
+            https://karan-safaie-qadi.github.io/admin-panel/
