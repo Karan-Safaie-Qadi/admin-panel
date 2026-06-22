@@ -38,6 +38,12 @@
 
 ---
 
+## 🎯 Demo
+
+Check out the live demo: **[karan-safaie-qadi.github.io/admin-panel](https://karan-safaie-qadi.github.io/admin-panel/)**
+
+---
+
 ## 📸 Screenshots
 
 > Screenshots coming soon!  
