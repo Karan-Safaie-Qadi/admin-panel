@@ -36,3 +36,47 @@
 
 > Screenshots coming soon!  
 > *Check the `/screenshots` directory for future previews.*
+
+---
+
+## 🚀 Installation
+
+### Prerequisites
+- A modern web browser (Chrome, Firefox, Edge)
+- Python 3 or Node.js (for local server)
+
+### Quick Start
+
+```bash
+# Clone the repository
+git clone https://github.com/Karan-Safaie-Qadi/admin-panel.git
+cd admin-panel
+
+# Option 1: Python HTTP Server
+python -m http.server 8000
+
+# Option 2: Node.js Serve
+npx serve .
+
+# Option 3: Docker
+docker-compose up
+```
+
+Then open `http://localhost:8000` (or the shown port) in your browser.
+
+> **Note:** No build step required. This is pure HTML/CSS/JS.
+
+---
+
+## 📖 Usage
+
+Navigate through the sidebar to access different sections:
+
+| Page | Description |
+|------|-------------|
+| **Dashboard** | Overview with stats, charts, and recent orders |
+| **Products** | Manage product catalog (add/edit/delete) |
+| **Categories** | Organize products by category |
+| **Orders** | Track and filter customer orders |
+| **Users** | Manage user accounts and permissions |
+| **Reports** | Sales analytics and revenue insights |
